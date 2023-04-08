@@ -8,7 +8,3 @@ data = [{"name": "Hag", "views": 20000, "likes": 3000}, {"name": "Wraith", "view
 for i in range(len(data)):
     response = requests.put(BASE + "video/" + str(i), data[i])
     print(response.json())
-
-
-deleted = requests.delete(BASE + "video/0")
-print (deleted)
